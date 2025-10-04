@@ -18,6 +18,7 @@ from rich.prompt import Prompt
 from tarea1.diccionario import Diccionario
 from tarea1.listaordenadadinamica import ListaOrdenadaDinámica
 from tarea1.listaordenadaestatica import ListaOrdenadaEstática
+from tarea1.tablahashabierta import TablaHashAbierta
 
 console = Console()
 
@@ -219,6 +220,7 @@ def menu_clase() -> Diccionario:
                 case "2":
                     return ListaOrdenadaEstática(100)
                 case "3":
+                    return TablaHashAbierta(12)
                     pass
                 case "4":
                     pass
