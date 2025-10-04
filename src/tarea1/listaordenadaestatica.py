@@ -42,25 +42,80 @@ class ListaOrdenadaEstática(Diccionario):
             return self.__último + 1
     
     def __getitem__(self, índice):
-        pass
+        if self.__último is None or índice < 0 or índice > self.__último:
+            raise IndexError("Índice fuera de rango")
+        return self.__arreglo[índice]
 
     def inserte(self, elemento):
-        pass
+        """Inserta en orden creciente"""
+        # Caso: lista vacía
+        if self.__último is None:
+            self.__arreglo[0] = elemento
+            self.__último = 0
+            return
+        
+        # Verificar que haya espacio
+        if self.__último + 1 >= len(self.__arreglo):
+            raise OverflowError("Lista llena, no se puede insertar")
+
+        # Encontrar la posición de inserción (ordenada)
+        i = 0
+        while i <= self.__último and self.__arreglo[i] < elemento:
+            i += 1
+
+        # Desplazar elementos a la derecha
+        for j in range(self.__último, i - 1, -1):
+            self.__arreglo[j + 1] = self.__arreglo[j]
+
+        # Insertar nuevo elemento
+        self.__arreglo[i] = elemento
+        self.__último += 1
 
     def borre(self, elemento):
-        pass
+        """Elimina la primera ocurrencia"""
+        if self.__último is None:
+            return False
+
+        # Buscar elemento
+        i = 0
+        while i <= self.__último and self.__arreglo[i] != elemento:
+            i += 1
+
+        if i > self.__último:
+            return False  # No encontrado
+
+        # Desplazar elementos a la izquierda
+        for j in range(i, self.__último):
+            self.__arreglo[j] = self.__arreglo[j + 1]
+
+        self.__último -= 1
+        if self.__último < 0:
+            self.__último = None
+        return True
 
     def limpie(self):
-        pass
+        """Vacía la lista"""
+        self.__último = None
 
     def miembro(self, elemento):
-        pass
+        """Verifica si el elemento está en la lista"""
+        if self.__último is None:
+            return False
+        for i in range(self.__último + 1):
+            if self.__arreglo[i] == elemento:
+                return True
+        return False
 
     def imprima(self):
-        print(self)
+        if self.__último is None:
+            print("[]")
+        else:
+            print([self.__arreglo[i] for i in range(self.__último + 1)])
 
     def __str__(self) -> str:
-        return str(self.__arreglo)
+        if self.__último is None:
+            return "[]"
+        return str([self.__arreglo[i] for i in range(self.__último + 1)])
     
     def __del__(self):
-        pass
+        self.__último = None
