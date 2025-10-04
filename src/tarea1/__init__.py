@@ -220,7 +220,7 @@ def menu_clase() -> Diccionario:
                 case "2":
                     return ListaOrdenadaEstática(100)
                 case "3":
-                    return TablaHashAbierta(12)
+                    return TablaHashAbierta()
                     pass
                 case "4":
                     pass

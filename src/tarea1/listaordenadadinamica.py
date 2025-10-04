@@ -22,6 +22,7 @@ class ListaOrdenadaDinámica(Diccionario):
         return actual.elemento
 
     def inserte(self, elemento):
+        self.__tamaño += 1
         referencia: Nodo = self.__cabeza
         nodo = Nodo(elemento)
         if referencia.siguiente is None:
