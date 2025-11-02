@@ -1,0 +1,80 @@
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2795,0.0971,0.0012,0.49,0.3779
+5000,ListaOrdenadaEstática,11.7720,0.9022,0.0000,0.06,12.6743
+5000,TablaHashAbierta,0.3144,0.0218,0.0080,3.63,0.3442
+5000,ABB Punteros,0.0070,0.0031,0.0006,0.52,0.0107
+5000,ABB VectorHeap,0.0102,0.0266,0.0000,0.10,0.0368
+5000,Trie Punteros,0.1891,0.0122,0.0578,26.50,0.2592
+5000,Trie Arreglos,0.2231,0.0109,0.0457,30.29,0.2798
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2715,0.0976,0.0012,0.49,0.3703
+5000,ListaOrdenadaEstática,11.9816,0.9020,0.0000,0.06,12.8836
+5000,TablaHashAbierta,0.3140,0.0223,0.0084,3.63,0.3447
+5000,ABB Punteros,0.0068,0.0031,0.0007,0.52,0.0106
+5000,ABB VectorHeap,0.0103,0.0271,0.0000,0.10,0.0374
+5000,Trie Punteros,0.1901,0.0121,0.0576,26.50,0.2598
+5000,Trie Arreglos,0.2334,0.0113,0.0515,30.29,0.2962
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2725,0.0986,0.0012,0.49,0.3723
+5000,ListaOrdenadaEstática,11.8943,0.9256,0.0000,0.06,12.8199
+5000,TablaHashAbierta,0.3158,0.0219,0.0081,3.63,0.3458
+5000,ABB Punteros,0.0069,0.0032,0.0007,0.52,0.0107
+5000,ABB VectorHeap,0.0104,0.0269,0.0000,0.10,0.0373
+5000,Trie Punteros,0.1924,0.0121,0.0580,26.50,0.2625
+5000,Trie Arreglos,0.2253,0.0111,0.0463,30.29,0.2827
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2768,0.0974,0.0012,0.49,0.3754
+5000,ListaOrdenadaEstática,12.0736,0.9081,0.0000,0.06,12.9817
+5000,TablaHashAbierta,0.3261,0.0228,0.0085,3.63,0.3574
+5000,ABB Punteros,0.0067,0.0033,0.0008,0.52,0.0108
+5000,ABB VectorHeap,0.0104,0.0279,0.0000,0.10,0.0383
+5000,Trie Punteros,0.1991,0.0122,0.0599,26.49,0.2711
+5000,Trie Arreglos,0.2366,0.0113,0.0491,30.28,0.2971
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2720,0.0972,0.0013,0.49,0.3705
+5000,ListaOrdenadaEstática,11.9573,0.9076,0.0000,0.06,12.8649
+5000,TablaHashAbierta,0.3169,0.0220,0.0081,3.63,0.3470
+5000,ABB Punteros,0.0069,0.0032,0.0007,0.52,0.0108
+5000,ABB VectorHeap,0.0104,0.0267,0.0000,0.10,0.0371
+5000,Trie Punteros,0.1972,0.0123,0.0578,26.49,0.2673
+5000,Trie Arreglos,0.2276,0.0110,0.0453,30.28,0.2839
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2680,0.0980,0.0013,0.49,0.3673
+5000,ListaOrdenadaEstática,11.8578,0.9288,0.0000,0.06,12.7866
+5000,TablaHashAbierta,0.3144,0.0221,0.0081,3.63,0.3445
+5000,ABB Punteros,0.0067,0.0031,0.0006,0.52,0.0104
+5000,ABB VectorHeap,0.0103,0.0271,0.0000,0.10,0.0374
+5000,Trie Punteros,0.1922,0.0122,0.0584,26.50,0.2628
+5000,Trie Arreglos,0.2243,0.0111,0.0461,30.28,0.2815
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2796,0.0977,0.0011,0.49,0.3784
+5000,ListaOrdenadaEstática,11.7515,0.9118,0.0000,0.06,12.6633
+5000,TablaHashAbierta,0.3177,0.0221,0.0080,3.63,0.3479
+5000,ABB Punteros,0.0068,0.0031,0.0006,0.52,0.0106
+5000,ABB VectorHeap,0.0103,0.0271,0.0000,0.10,0.0373
+5000,Trie Punteros,0.1929,0.0124,0.0583,26.48,0.2637
+5000,Trie Arreglos,0.2254,0.0111,0.0461,30.27,0.2826
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2772,0.1022,0.0010,0.49,0.3804
+5000,ListaOrdenadaEstática,12.0459,0.9284,0.0000,0.06,12.9743
+5000,TablaHashAbierta,0.3166,0.0221,0.0081,3.63,0.3469
+5000,ABB Punteros,0.0067,0.0031,0.0007,0.52,0.0105
+5000,ABB VectorHeap,0.0104,0.0271,0.0000,0.10,0.0376
+5000,Trie Punteros,0.1918,0.0125,0.0583,26.51,0.2627
+5000,Trie Arreglos,0.2270,0.0111,0.0461,30.30,0.2843
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2826,0.0984,0.0010,0.49,0.3821
+5000,ListaOrdenadaEstática,11.8226,0.9073,0.0000,0.06,12.7299
+5000,TablaHashAbierta,0.3189,0.0221,0.0082,3.63,0.3493
+5000,ABB Punteros,0.0069,0.0032,0.0007,0.52,0.0108
+5000,ABB VectorHeap,0.0104,0.0272,0.0000,0.10,0.0375
+5000,Trie Punteros,0.1913,0.0123,0.0584,26.49,0.2620
+5000,Trie Arreglos,0.2259,0.0111,0.0470,30.28,0.2841
+N,Estructura,Inserción (s),Búsqueda (s),Limpieza (s),Memoria (MB),Total (s)
+5000,ListaOrdenadaDinámica,0.2724,0.0983,0.0011,0.49,0.3718
+5000,ListaOrdenadaEstática,11.8847,0.9074,0.0000,0.06,12.7920
+5000,TablaHashAbierta,0.3191,0.0226,0.0082,3.63,0.3498
+5000,ABB Punteros,0.0067,0.0032,0.0007,0.52,0.0106
+5000,ABB VectorHeap,0.0103,0.0270,0.0000,0.10,0.0373
+5000,Trie Punteros,0.1938,0.0123,0.0581,26.50,0.2643
+5000,Trie Arreglos,0.2249,0.0110,0.0461,30.28,0.2820

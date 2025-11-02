@@ -23,6 +23,7 @@ from tarea1.abbpunteros import AbbPunteros
 from tarea1.abbvectorheap import ABBVectorHeap
 from tarea1.triepunteros import TriePunteros
 from tarea1.triearreglos import TrieArreglos
+from tarea1.rendimiento import AnalizadorRendimiento
 
 console = Console()
 
@@ -262,6 +263,63 @@ def menu_diccionario(diccionario: Diccionario) -> None:
     finally:
         del diccionario
 
+#Menus para el rendimimento
+def render_menu_tamano() -> None:
+    cuerpo = (
+        "\n"
+        "      Selección de Tamaño del Diccionario\n\n"
+        "[1] Pequeño (100 elementos)\n"
+        "[2] Mediano (5 000 elementos)\n"
+        "[3] Grande (100 000 elementos)\n\n"
+        "Digite una opción [_]"
+    )
+    panel_contenido(cuerpo)
+
+
+def menu_tamano() -> int:
+    """Permite seleccionar el tamaño N de prueba."""
+    while True:
+        render_menu_tamano()
+        opcion = Prompt.ask("Digite una opción (1-3)").strip()
+        match opcion:
+            case "1":
+                return 100
+            case "2":
+                return 5_000
+            case "3":
+                return 100_000
+            case _:
+                console.print("[red]Opción inválida.[/]")
+
+
+def render_menu_prueba() -> None:
+    cuerpo = (
+        "\n"
+        "      Tipo de Prueba de Rendimiento\n\n"
+        "[1] Inserción\n"
+        "[2] Búsqueda\n"
+        "[3] Borrado\n\n"
+        "Digite una opción [_]"
+    )
+    panel_contenido(cuerpo)
+
+
+def menu_prueba() -> str:
+    """Permite seleccionar el tipo de prueba a realizar."""
+    while True:
+        render_menu_prueba()
+        opcion = Prompt.ask("Digite una opción (1-3)").strip()
+        match opcion:
+            case "1":
+                return "insercion"
+            case "2":
+                return "busqueda"
+            case "3":
+                return "borrado"
+            case _:
+                console.print("[red]Opción inválida.[/]")
+
+
 
 def main() -> None:
     opcion = menu_etapa()
@@ -270,7 +328,9 @@ def main() -> None:
             diccionario = menu_clase()
             menu_diccionario(diccionario)
         case "2":
-            pass
+            n = menu_tamano()
+            analizador = AnalizadorRendimiento(n)
+            analizador.prueba_completa()
 
 
 if __name__ == "__main__":
