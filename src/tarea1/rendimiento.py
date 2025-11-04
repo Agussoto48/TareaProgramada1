@@ -92,7 +92,8 @@ class AnalizadorRendimiento:
 
                     # --- Búsqueda ---
                     t2 = time.perf_counter()
-                    for d in random.sample(self.datos, min(1000, len(self.datos))):
+                    #Agarra random 10% de datos N y los busca
+                    for d in random.sample(self.datos, min(1, len(self.datos)//10)):
                         dic.miembro(d)
                     t3 = time.perf_counter()
 

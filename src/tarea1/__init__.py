@@ -269,8 +269,8 @@ def render_menu_tamano() -> None:
         "\n"
         "      Selección de Tamaño del Diccionario\n\n"
         "[1] Pequeño (100 elementos)\n"
-        "[2] Mediano (5 000 elementos)\n"
-        "[3] Grande (100 000 elementos)\n\n"
+        "[2] Mediano (1 000 elementos)\n"
+        "[3] Grande (5 000 elementos)\n\n"
         "Digite una opción [_]"
     )
     panel_contenido(cuerpo)
@@ -285,9 +285,9 @@ def menu_tamano() -> int:
             case "1":
                 return 100
             case "2":
-                return 5_000
+                return 1_000
             case "3":
-                return 100_000
+                return 5_000
             case _:
                 console.print("[red]Opción inválida.[/]")
 
